@@ -12,7 +12,9 @@
   <a href="/tadpoles/<%= @tadpole.id %>/edit">Edit</a> |
   <a href="/tadpoles/<%= @tadpole.id %>/destroy">Delete</a>
 </div>
-
+<form action="/tadpoles/<%= @tadpole.id %>/metamorphose" method="get">
+  <button type="submit" formmethod="post">Become a frog</button>
+</form>
 <div class="card">
   <img src="http://<%= @tadpole.color %>-tadpole.jpg.to/" alt="Tadpole Picture" width="300">
 </div>
